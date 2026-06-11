@@ -47,10 +47,11 @@ body {
     padding: 0 135px;
 }
 /* ----------------------------------------section concept-----------------------------------------*/
-.concept_content {
-    margin-top: 90px;
-    background-image: url(../img/ellipse1.png) no-repeat, url(../img/concept-house.png) no-repeat, url(../img/concept-leon.png) no-repeat;
-    /* background-position: center bottom, center 15%, left top; */
+.concept{
+    margin-top: 180px;
+    /* background-image: url(../img/concept-house.png), url(../img/concept-leon.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, center 15%; */
 }
 .concept_text {
     font-family: "Inter", sans-serif;
@@ -67,19 +68,44 @@ body {
 
     background: #3D0000;
     background: linear-gradient(315deg, #3D0000, #910808);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 24px;
 }
 .concept_btn:hover {
-
+    color: #fff;
 }
 .concept_buttons {
     display: flex;
     gap: 20px;
 }
-/* .concept_content {
-    margin-top: 221px;
-}
 .concept_text {
     margin: 45px 0;
-} */
+}
+
+.concept_content1 {
+    margin-top: 221px;
+    max-width: 590px;
+    min-height: 100vh;
+}
+.concept_content1 .backg-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.concept_content2 {
+    /* max-width: 675px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.concept_content2__text {
+    max-width: 675px;
+    margin-top: 127px;
+}
+.concept_content2 .backg-img {
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+}
