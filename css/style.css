@@ -13,12 +13,27 @@ body {
 
 @font-face {
     font-family: 'Compacta Bd BT';                 /* Имя для ссылок в коде */
-    src: url('/fonts/Compacta-Bd-BT-Bold.woff2') format('woff2'), /* Современный формат в приоритете */
-         url('/fonts/Compacta-Bd-BT-Bold.woff') format('woff'),   /* Формат для старых браузеров */
-         url('/fonts/Compacta-Bd-BT-Bold.ttf') format('truetype'); /* Базовый формат */
+    src: url('/fonts/Compacta-Bd-BT-Bold.ttf') format('truetype'); /* Базовый формат */
     font-weight: bold;                             /* Важно для правильной стилизации */
     font-style: normal;
     font-display: swap;                            /* Улучшает восприятие скорости загрузки */
+}
+
+.wrapper {
+    padding: 0 135px;
+}
+h1 {
+    font-family: 'Compacta Bd BT', Impact, sans-serif;
+    color: #fff;
+    font-size: 128px;
+    line-height: 100px;
+    letter-spacing: 2%;
+}
+.red-letter{
+    color: red;
+}
+p {
+    color: #fff;
 }
 /* ----------------------------------------section header -----------------------------------------*/
 .navigation_menu {
@@ -53,21 +68,9 @@ body {
 .navigation_link:hover {
     color: #858585;
 }
-.wrapper {
-    padding: 0 135px;
-}
-h1 {
-    font-family: 'Compacta Bd BT', Impact, sans-serif;
-    color: #fff;
-    font-size: 128px;
-    line-height: 100px;
-    letter-spacing: 2%;
-}
-.red-letter{
-    color: red;
-}
-p {
-    color: #fff;
+
+.navigation_item {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 }
 /* ----------------------------------------section concept-----------------------------------------*/
 .concept{
@@ -137,3 +140,38 @@ p {
 }
 
 /* ----------------------------------------section games-----------------------------------------*/
+/* #games {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.games_content {
+    position: relative;
+    max-width: 1200px; 
+    overflow: hidden;
+}
+.game_carousel {
+    display: flex;
+    gap: 24px;
+}
+
+.game-card-image {
+    border: #4E4F52 2px solid;
+    border-radius: 19px;
+} */
+
+
+
+.carousel-container {
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  display: none; /* Скрываем все слайды изначально */
+}
+
+.slide:first-child {
+  display: block; /* Показываем первый слайд */
+}
+
