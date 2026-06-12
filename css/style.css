@@ -34,6 +34,7 @@ h1 {
 }
 p {
     color: #fff;
+    font-family: "Inter", sans-serif;
 }
 /* ----------------------------------------section header -----------------------------------------*/
 .navigation_menu {
@@ -161,17 +162,69 @@ p {
 } */
 
 
+#games {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.games_content {
+    display: flex;
+    align-items: center;
+}
 
+.games_label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.game_carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
 .carousel-container {
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
+
+    max-width: 1200px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 
-.slide {
-  display: none; /* Скрываем все слайды изначально */
-}
+/* .slide {
+    display: none; 
+} */
 
 .slide:first-child {
-  display: block; /* Показываем первый слайд */
+    display: block; 
+}
+/* .slide:nth-child(2) {
+    display: block; 
+} */
+
+.game-card-image {
+    border: #4E4F52 2px solid;
+    border-radius: 19px;
+    width: 407px;
+    height: 234px;
+    margin: 32px 0;
 }
 
+.game-card-image:hover {
+    box-shadow: 0 0 15px #fff;
+}
+
+.game-card-desc{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tab-btn {
+    width: 55px;
+    height: 42px;
+    background: linear-gradient(315deg, #3D0000, #910808);
+    border-radius: 14px;
+    border: none;
+}
