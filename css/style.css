@@ -10,6 +10,16 @@ body {
     background: #02090C;
     background: linear-gradient(90deg, #02090C, #250909);
 }
+
+@font-face {
+    font-family: 'Compacta Bd BT';                 /* Имя для ссылок в коде */
+    src: url('/fonts/Compacta-Bd-BT-Bold.woff2') format('woff2'), /* Современный формат в приоритете */
+         url('/fonts/Compacta-Bd-BT-Bold.woff') format('woff'),   /* Формат для старых браузеров */
+         url('/fonts/Compacta-Bd-BT-Bold.ttf') format('truetype'); /* Базовый формат */
+    font-weight: bold;                             /* Важно для правильной стилизации */
+    font-style: normal;
+    font-display: swap;                            /* Улучшает восприятие скорости загрузки */
+}
 /* ----------------------------------------section header -----------------------------------------*/
 .navigation_menu {
     position: fixed;
@@ -46,12 +56,28 @@ body {
 .wrapper {
     padding: 0 135px;
 }
+h1 {
+    font-family: 'Compacta Bd BT', Impact, sans-serif;
+    color: #fff;
+    font-size: 128px;
+    line-height: 100px;
+    letter-spacing: 2%;
+}
+.red-letter{
+    color: red;
+}
+p {
+    color: #fff;
+}
 /* ----------------------------------------section concept-----------------------------------------*/
 .concept{
     margin-top: 180px;
     /* background-image: url(../img/concept-house.png), url(../img/concept-leon.png);
     background-repeat: no-repeat, no-repeat;
     background-position: right bottom, center 15%; */
+    background-image: url(../img/ellipse1.png);
+    background-repeat: no-repeat;
+    background-position: 120% 30%;
 }
 .concept_text {
     font-family: "Inter", sans-serif;
@@ -109,3 +135,5 @@ body {
     left: 0;
     /* bottom: 0; */
 }
+
+/* ----------------------------------------section games-----------------------------------------*/
